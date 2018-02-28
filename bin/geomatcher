@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+puts "list of users within 100KM from Intercom HQ: "
+PP.pp Customer.get_nearby(100000)
