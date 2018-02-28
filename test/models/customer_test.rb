@@ -29,6 +29,6 @@ class CustomerTest < ActiveSupport::TestCase
 
   test "geo distance returns correct value" do
      distance = Geo::DistanceCalculator.get_distance(53.339428, -6.257664, 29.956200, 31.276977)
-     assert_equal distance, 3983865.7201014515
+     assert_equal distance, 3983865.7201014515 # Obviously I'm too far for a drink
   end
 end

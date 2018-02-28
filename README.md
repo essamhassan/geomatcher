@@ -1,24 +1,5 @@
-# README
+# GeoMatcher
+Sample application that reads a list of users from a json file and return only those within a certain distance from a certain geopoint sorted by their id. this can be accessible from API or "much simpler" by running the command `rails runner bin/geomatcher`. I used rails fully aware it was an overkill for such a simple application yet the framework conventions gives you better understanding for how the app is structured
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+for testing run `rails test`
