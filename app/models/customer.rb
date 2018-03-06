@@ -8,7 +8,7 @@ class Customer
 
   def self.get_nearby(offset)
     all_with_distance = all.map do |customer|
-      customer[:distance] = Geo::DistanceCalculator.get_distance(customer["latitude"].to_f, customer["longitude"].to_f, Constants::Intercom::LATITUDE, Constants::Intercom::LONGITUDE )
+      customer[:distance] = Geo::DistanceCalculator.get_distance(customer["latitude"].to_f, customer["longitude"].to_f, Constants::LATITUDE, Constants::LONGITUDE )
       customer.symbolize_keys
     end
 
